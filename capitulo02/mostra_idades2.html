@@ -1,0 +1,17 @@
+<h1>Mostra Idade Dois - Funções chamando outras Funções</h1>
+
+<script>
+    let pulaLinha = function() {
+        document.write("<br><hr><br>");
+    }
+
+    let mostra = function(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let ano = 2025;
+    mostra("<big>Eu nasci em </big>" + (ano - 45));
+    mostra("<big>Adriano nasceu em </big>" + (ano - 50));
+    mostra("<big>João nasceu em </big>" + (ano - 30));
+</script>

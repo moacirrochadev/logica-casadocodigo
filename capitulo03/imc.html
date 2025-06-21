@@ -1,0 +1,30 @@
+<h1>Cálculo do Índice de Massa Corporal</h1>
+
+<script>
+    let pulaLinha = function() {
+        document.write("<br>");
+    }
+
+    let mostra = function(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    // let peso = 91;
+    // let altura = 1.73;
+    // let imc = peso / (altura * altura);
+    // mostra("Meu IMC é de " + imc.toFixed(2) + ".");
+
+    //Outra abordagem
+    let calculaIMC = function (altura, peso) {
+        let imc = peso / (altura * altura);
+        return imc;
+    }
+
+    let peso = 91;
+    let altura = 1.76;
+    let imc = Math.round(calculaIMC(altura, peso));
+    mostra("Meu IMC é " + imc + ".");
+    mostra("Ainda está " + (imc - 18.5) + " pontos acima do peso ideal.");
+    mostra("Você ainda está " + (35 - imc) + " pontos abaixo do limite de obesidade.");
+</script>

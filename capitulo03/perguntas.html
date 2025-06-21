@@ -1,0 +1,42 @@
+<h1>Trabalhe com dados capturados</h1>
+<h2>Pergunte altura e peso do usuário</h2>
+<script>
+  let nome = prompt("Olá! Qual é o seu nome?");
+  document.write("Bem-vindo, " + nome + "!<br>");
+
+  let idade = prompt(nome + ", quantos anos você tem?");
+  document.write(nome + " tem " + idade + " anos.<br>");
+
+  Exercícios
+  let altura = prompt(nome + ", qual é a sua altura em metros?");
+  let peso = prompt(nome + ", qual é o seu peso em quilos?");
+
+  let calculaIMC = function (altura, peso) {
+    let imc = peso / (altura * altura);
+    return imc;
+  };
+
+  let imc = Math.round(calculaIMC(altura, peso));
+  document.write(nome + ", o seu IMC é " + imc + ".<br>");
+</script>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perguntas.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+  <h3>Cronologia Musical</h3>
+  <ol>
+    <li><a href="#" target="_blank">Lupe de lupe</a></li>
+    <li><a href="#" target="_blank">Lencinho</a></li>
+    <li><a href="#" target="_blank">Xóõ</a></li>
+    <li><a href="#" target="_blank">Ginge</a></li>
+  </ol>
+</div>
+</body>
+</html>
+neto-->

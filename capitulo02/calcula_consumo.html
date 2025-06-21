@@ -1,0 +1,12 @@
+<h3>Álcool ou Gasolina</h3>
+<script>
+    let tanque = 40;
+    let caminhoComGasolina = 480;
+    let caminhoComAlcool = 300;
+    let consumoComGasolina = caminhoComGasolina / tanque;
+    let consumoComAlcool = caminhoComAlcool / tanque;
+    document.write("Consumo com gasolina: " + Math.round(consumoComGasolina) + " km/l<br>");
+    document.write("Arredondando com toFixed(2): " + consumoComGasolina.toFixed(2) + " km/l<br>");
+    document.write("Consumo com álcool: " + Math.round(consumoComAlcool) + " km/l<br>");
+    document.write("Arredondando com toFixed(2): " + consumoComAlcool.toFixed(2) + " km/l<br>");
+</script>

@@ -1,0 +1,15 @@
+<h3>Preço do Combustível</h3>
+<script>
+    let precoGasolina = 2.90;
+    let precoAlcool = 2.40;
+
+    let tanque = 40;
+    let caminhoComGasolina = 480;
+    let caminhoComAlcool = 300;
+
+    let precoPorKmGasolina = (precoGasolina * tanque) / caminhoComGasolina;
+    let precoPorKmAlcool = (precoAlcool * tanque) / caminhoComAlcool;
+
+    document.write("Preço por km com gasolina: R$ " + precoPorKmGasolina.toFixed(2) + "<br>");
+    document.write("Preço por km com álcool: R$ " + precoPorKmAlcool.toFixed(2) + "<br>");
+</script>

@@ -1,0 +1,36 @@
+<h1>Descubra quantos dias seus amigos já viveram</h1>
+
+<script>
+    function pularLinha() {
+        document.write("<br>");
+    }
+    let idade = prompt("Quantos anos você tem?");
+    let dias = idade * 365;
+    // document.write("Você já viveu aproximadamente " + dias + " dias de vida.");
+    // pularLinha();
+    // let batimentos = dias * 24 * 60 * 80;
+    // document.write("Seu coração já bateu aproximadamente " + batimentos + " vezes. Haja coração!");
+    // pularLinha();
+
+    // Função para calcular dias de vida e batimentos cardíacos
+    let calculaDiasDeVida = function(idade) {
+        let dias = idade * 365;
+        document.write("Você já viveu aproximadamente " + dias + " dias de vida.");
+        pularLinha();
+        
+        
+    };
+
+    let calculaBatimentos = function(dias){
+        let batimentos = dias * 24 * 60 * 80;
+        document.write("Seu coração já bateu aproximadamente " + batimentos + " vezes. Haja coração!");
+        pularLinha();
+    };
+
+    // Chamada das funções
+    calculaDiasDeVida(idade);
+
+    // Chamada da função para calcular batimentos cardíacos
+    calculaBatimentos(idade * 365);
+
+</script>
